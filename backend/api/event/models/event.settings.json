@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "live_datetime": {
+      "type": "datetime"
+    },
+    "display": {
+      "type": "boolean"
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "thumb": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "youtube_url": {
+      "type": "string"
+    },
+    "vimeo_url": {
+      "type": "string"
+    },
+    "category": {
+      "model": "category",
+      "via": "events"
+    },
+    "iframe": {
+      "type": "richtext"
+    },
+    "openprocessing_iframe": {
+      "type": "string"
+    }
+  }
+}

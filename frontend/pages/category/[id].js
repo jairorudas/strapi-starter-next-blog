@@ -1,4 +1,5 @@
 import Articles from '../../components/articles'
+import Events from '../../components/events'
 import { getCategory, getCategories } from '../../lib/api'
 import Layout from '../../components/layout'
 
@@ -9,6 +10,7 @@ const Category = ({ category, categories }) => {
         <div className="uk-container uk-container-large">
           <h1>{category.name}</h1>
           <Articles articles={category.articles} />
+          <Events events={category.events} />
         </div>
       </div>
     </Layout>

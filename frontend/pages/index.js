@@ -1,9 +1,10 @@
 import React from 'react'
 import Articles from '../components/articles'
+import Events from '../components/events'
 import Layout from '../components/layout'
-import { getArticles, getCategories } from '../lib/api'
+import { getArticles, getCategories, getEvents } from '../lib/api'
 
-const Home = ({ articles, categories }) => {
+const Home = ({ articles, categories, events }) => {
   return (
     <Layout categories={categories}>
       <div className="uk-section">
@@ -19,8 +20,9 @@ const Home = ({ articles, categories }) => {
 export async function getStaticProps() {
   const articles = (await getArticles()) || []
   const categories = (await getCategories()) || []
+  const events = (await getEvents()) || []
   return {
-    props: { articles, categories },
+    props: { articles, categories, events },
   }
 }
 
