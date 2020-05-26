@@ -17,7 +17,8 @@ To deploy this Strapi instance you'll need:
 
 Once you have created these accounts you can deploy your instance by clicking on this button
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-next-blog)
+<!-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-next-blog) -->
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jshaw/strapi-starter-next-blog)
 
 ### Deploy the frontend
 
