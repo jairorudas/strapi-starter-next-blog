@@ -1,5 +1,6 @@
 async function fetchAPI(query, { variables } = {}) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/graphql`, {
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/graphql`, {
+  const res = await fetch(`https://vectorfestival-2020.herokuapp.com/graphql`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
