@@ -6,7 +6,8 @@ const Card = ({ article }) => {
   //   ? process.env.NEXT_PUBLIC_API_URL + article.image.url
   //   : article.image.url
 
-  const imageUrl = process.env.NEXT_PUBLIC_API_URL + article.image.url;
+  // const imageUrl = process.env.NEXT_PUBLIC_API_URL + article.image.url;
+  const imageUrl = article.image.url;
   return (
     <Link as={`/article/${article.id}`} href="/article/[id]">
       <a className="uk-link-reset">

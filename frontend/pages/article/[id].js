@@ -7,7 +7,8 @@ const Article = ({ article, categories }) => {
   // const imageUrl = article.image.url.startsWith('/')
   //   ? process.env.NEXT_PUBLIC_API_URL + article.image.url
   //   : article.image.url
-  const imageUrl = process.env.NEXT_PUBLIC_API_URL + article.image.url;
+  // const imageUrl = process.env.NEXT_PUBLIC_API_URL + article.image.url;
+  const imageUrl = article.image.url;
   return (
     <Layout categories={categories}>
       <div
