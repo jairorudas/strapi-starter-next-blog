@@ -14,9 +14,10 @@ import DownloadLink from '../../components/download_link'
 
 
 const Event = ({ event, categories }) => {
-  const imageUrl = event.thumb.url.startsWith('/')
-    ? process.env.NEXT_PUBLIC_API_URL + event.thumb.url
-    : event.thumb.url
+  // const imageUrl = event.thumb.url.startsWith('/')
+  //   ? process.env.NEXT_PUBLIC_API_URL + event.thumb.url
+  //   : event.thumb.url
+  const imageUrl = process.env.NEXT_PUBLIC_API_URL + article.image.url;
 
   return (
     <Layout categories={categories}>
