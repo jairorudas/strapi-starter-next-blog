@@ -39,7 +39,7 @@
     "uuid": ""
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.17.0"
   },
   "license": "MIT"
 }
